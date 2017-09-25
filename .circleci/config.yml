@@ -18,6 +18,7 @@ dependencies:
     - "project/target/streams"
   # Compile all sources
   override:
+    - play update
     - sbt update
     - sbt test:compile
 
