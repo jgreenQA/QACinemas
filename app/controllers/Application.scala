@@ -21,7 +21,4 @@ class Application @Inject()(val messagesApi: MessagesApi, val reactiveMongoApi: 
     Ok(views.html.classifications())
   }
 
-  def classificationPage = Action {
-    Ok(views.html.Classifications())
-  }
 }
