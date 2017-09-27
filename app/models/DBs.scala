@@ -73,20 +73,23 @@ object Formats {
       "addressLine1" -> nonEmptyText,
       "postcode" -> nonEmptyText,
       "phonenumber" -> nonEmptyText
-    )(Person.apply)(Person.unapply))
+    )(Person.apply)(Person.unapply)
+  )
 
   val createCinemaForm = Form(
     mapping(
       "ID" -> number,
       "addressLine1" -> nonEmptyText,
       "postcode" -> nonEmptyText
-    )(Cinema.apply)(Cinema.unapply))
+    )(Cinema.apply)(Cinema.unapply)
+  )
 
   val createMovieForm = Form(
     mapping(
       "ID" -> number,
       "Movie Name" -> nonEmptyText
-    )(Movie.apply)(Movie.unapply))
+    )(Movie.apply)(Movie.unapply)
+  )
 
   val createScreensForm = Form(
     mapping(
@@ -95,7 +98,8 @@ object Formats {
       "Un-Available Seats" -> number,
       "Screen Type" -> nonEmptyText,
       "CinemaID" -> number
-    )(Screens.apply)(Screens.unapply))
+    )(Screens.apply)(Screens.unapply)
+  )
 
   val createShowingsForm = Form(
     mapping(
@@ -105,14 +109,16 @@ object Formats {
       "date" -> number,
       "MovieID" -> number,
       "screenID" -> number
-    )(Showings.apply)(Showings.unapply))
+    )(Showings.apply)(Showings.unapply)
+  )
 
   val createTicketForm = Form(
     mapping(
       "ID" -> number,
       "ticket type" -> nonEmptyText,
       "price" -> number(min = 0, max = 100)
-    )(Ticket.apply)(Ticket.unapply))
+    )(Ticket.apply)(Ticket.unapply)
+  )
 
   val createCreditCardForm = Form(
     mapping(
@@ -121,7 +127,8 @@ object Formats {
       "expiry Date" -> number,
       "security Code" -> number,
       "personID" -> number
-    )(CreditCard.apply)(CreditCard.unapply))
+    )(CreditCard.apply)(CreditCard.unapply)
+  )
 
 
 
