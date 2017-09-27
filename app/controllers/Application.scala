@@ -13,7 +13,11 @@ class Application @Inject()(val messagesApi: MessagesApi, val reactiveMongoApi: 
     Ok(views.html.index())
   }
 
-  def Inprogress = Action {
-    Ok(views.html.Inprogress())
+  def e404 = Action {
+    Ok(views.html.e404())
+  }
+
+  def classifications = Action {
+    Ok(views.html.classifications())
   }
 }
