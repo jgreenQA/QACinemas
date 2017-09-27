@@ -16,4 +16,8 @@ class Application @Inject()(val messagesApi: MessagesApi, val reactiveMongoApi: 
   def Inprogress = Action {
     Ok(views.html.Inprogress())
   }
+
+  def classificationPage = Action {
+    Ok(views.html.Classifications())
+  }
 }
