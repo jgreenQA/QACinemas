@@ -10,5 +10,7 @@ scalaVersion := "2.11.11"
 
 libraryDependencies ++= Seq( jdbc , cache , ws , specs2 % Test )
 libraryDependencies ++= Seq(  "org.reactivemongo" %% "play2-reactivemongo" % "0.12.5-play25")
+libraryDependencies += "org.scalatest" % "scalatest_2.11" % "3.0.1" % "test"
 
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )
+

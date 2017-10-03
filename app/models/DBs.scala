@@ -4,7 +4,7 @@ import play.api.data.Forms._
 import play.api.data._
 
 
-case class Persons(
+case class Person(
                       personID: Int,
                       firstName: String,
                       lastName: String,
@@ -20,7 +20,7 @@ case class Cinema(
                    postcode: String)
 
 case class Movie(
-                   movieID: Int,
+                   movieID: String,
                    movieName: String)
 
 case class Screens(
@@ -73,7 +73,7 @@ object Formats {
       "addressLine1" -> nonEmptyText,
       "postcode" -> nonEmptyText,
       "phonenumber" -> nonEmptyText
-    )(Persons.apply)(Persons.unapply)
+    )(Person.apply)(Person.unapply)
   )
 
   val createCinemaForm = Form(
@@ -86,7 +86,7 @@ object Formats {
 
   val createMovieForm = Form(
     mapping(
-      "ID" -> number,
+      "ID" -> nonEmptyText,
       "Movie Name" -> nonEmptyText
     )(Movie.apply)(Movie.unapply)
   )
@@ -132,7 +132,7 @@ object Formats {
 
 
 
-  implicit val personFormat = Json.format[Persons]
+  implicit val personFormat = Json.format[Person]
   implicit val cinemaFormat = Json.format[Cinema]
   implicit val movieFormat = Json.format[Movie]
   implicit val screensFormat = Json.format[Screens]
