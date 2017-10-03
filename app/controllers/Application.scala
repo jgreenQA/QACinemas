@@ -24,4 +24,8 @@ class Application @Inject()(val messagesApi: MessagesApi, val reactiveMongoApi: 
   def showing = Action {
     Ok(views.html.showing())
   }
+
+  def about = Action {
+    Ok(views.html.about())
+  }
 }

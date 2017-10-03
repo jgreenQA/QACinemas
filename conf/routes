@@ -7,6 +7,7 @@ GET     /                           controllers.Application.index
 GET     /e404                       controllers.Application.e404
 GET     /classifications            controllers.Application.classifications
 GET     /showing                    controllers.Application.showing
+GET     /about                      controllers.Application.about
 
 
 # Map static resources from the /public folder to the /assets URL path
