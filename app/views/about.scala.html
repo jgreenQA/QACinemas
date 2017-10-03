@@ -1,4 +1,82 @@
 @()()
 @main("About") {
+    <div class="bg-primary-dark-op">
+        <section class="content content-full content-boxed overflow-hidden">
+                <!-- Section Content -->
+                <!-- END Section Content -->
+        </section>
+    </div>
 
+        <!-- Main Container -->
+    <main id="main-container" style="min-height: 931px;">
+            <!-- Page Header -->
+        <div class="content bg-gray-lighter">
+            <div class="row items-push">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="block block-themed">
+                        <div class="block-header bg-primary-light">
+                            <ul class="block-options">
+                            </ul>
+
+                            <h3 class="block-title">Map</h3>
+                        </div>
+                        <div id="js-map-sat" style="height: 350px;"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="block block-themed">
+                        <div class="block-header bg-primary-light">
+                            <ul class="block-options">
+                            </ul>
+
+                            <h3 class="block-title">About Us</h3>
+                        </div>
+                        <div class="block-content">
+                            <br><h2 class="push text-primary" style="text-indent: 1.0em;">We are QA Cinemas</h2><br>
+                            <p>Our passion for film and the whole cinema experience is so
+                                deep-rooted that it is embodied in everything we do.
+                                We’re determined to give every guest a great experience every time they visit,
+                                and so continuously strive to innovate and improve our hospitality and services.
+                            </p>
+                            <p>
+                                We offer so much more than popcorn and soft drinks. We now have Costa Coffee in
+                                many of our cinemas, a superb cocktail lounge at some sites, or our Gallery offering
+                                includes unlimited popcorn, nachos and soft drinks in other locations.
+                                QA Cinemas is the ultimate in luxury cinema-going.
+                            </p>
+                            <p>
+                                We pride ourselves in the very best cinema experience: cutting-edge technology
+                                and the widest choice of experiences (this extends way beyond the box office –
+                                we also screen live sports and cultural events and special screenings for
+                                specific groups too).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="block block-themed">
+                        <div class="block-header bg-primary-light">
+                            <h3 class="block-title">Opening Times</h3>
+                        </div>
+                        <div class="block-content">
+                            <ul class="list-group">
+                                <li class="list-group-item"><span class="badge">9:00 - 23:00</span>Monday</li>
+                                <li class="list-group-item"><span class="badge">9:00 - 23:00</span>Tuesday</li>
+                                <li class="list-group-item"><span class="badge">9:00 - 23:00</span>Wednesday</li>
+                                <li class="list-group-item"><span class="badge">9:00 - 23:00</span>Thursday</li>
+                                <li class="list-group-item"><span class="badge">9:00 - 23:00</span>Friday</li>
+                                <li class="list-group-item"><span class="badge">10:00 - 24:00</span>Saturday</li>
+                                <li class="list-group-item"><span class="badge">10:00 - 24:00</span>Sunday</li>
+                            </ul>
+                        </div>
+                    </div>
+                        <!-- END Content 4 -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVxLoIeqnW5iqwWDOXNQ57PHPMWSqwNVU"></script>
+    <script src="@routes.Assets.at("javascripts/maps/gmaps.min.js")"></script>
+    <script src="@routes.Assets.at("javascripts/maps/base_comp_maps.js")"></script>
 }
