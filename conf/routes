@@ -12,8 +12,8 @@ GET     /showing                    controllers.Application.showing
 #Data Tests
 GET         /+data                   controllers.Application.createMovie
 GET         /+data                   controllers.Application.createPerson
+GET         /find/:name              controllers.Application.findMovieByName(name)
 GET         /find/:name              controllers.Application.findByName(name)
-
 
 
 # Map static resources from the /public folder to the /assets URL path
